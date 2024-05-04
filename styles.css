@@ -1,0 +1,37 @@
+#resume {
+    /* Define o espaçamento e o tamanho do currículo */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+.circle-image {
+    /* Estilo para uma imagem circular */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 5px solid #000; /* cor da borda padrão */
+    border-radius: 50%;
+}
+
+.theme {
+    /* Estilo para o tema */
+    background-color: #f0f0f0; /* cor do tema padrão */
+}
+
+.resume-section {
+    /* Estilo para seção do currículo */
+    border-bottom: 2px solid #000; /* cor da borda padrão */
+}
+
+#colorStripe {
+    /* Faixa de cor à esquerda */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px; /* Ajuste a largura conforme necessário */
+    background-color: #f0f0f0; /* Substitua "suaCor" pela cor desejada */
+    z-index: 9999; /* Garante que fique acima dos outros elementos */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Dinâmico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Formulário de currículo -->
+    <div id="resume">
+        <form id="resumeForm">
+            <input type="text" id="content" placeholder="Conteúdo">
+            <select id="type">
+                <option value="name">Nome</option>
+                <option value="personalInfo">Informação Pessoal</option>
+                <option value="title">Título</option>
+                <option value="subTitle">Sub-título</option>
+            </select>
+            <button type="button" onclick="addItem()">Adicionar</button>
+            <br>
+            <!-- Inputs para URL, largura e altura da imagem -->
+            <label for="imageURL">URL da Imagem:</label>
+            <input type="text" id="imageURL">
+            <label for="imageWidth">Largura da Imagem:</label>
+            <input type="text" id="imageWidth">
+            <label for="imageHeight">Altura da Imagem:</label>
+            <input type="text" id="imageHeight">
+            <button type="button" onclick="updateImage()">Atualizar</button>
+            <br>
+            <!-- Input para escolher a cor do tema -->
+            <label for="color">Cor do Tema:</label>
+            <input type="text" id="color">
+            <button type="button" onclick="changeTheme()">Trocar</button>
+            <br>
+            <!-- Botão para concluir e imprimir o currículo -->
+            <button type="button" onclick="completeResume()">Concluir</button>
+        </form>
+    </div>
+    <!-- Faixa de cor para mudar o tema -->
+    <div id="colorStripe"></div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
